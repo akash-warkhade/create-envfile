@@ -20,7 +20,7 @@ jobs:
       - name: Test use GitHub Action secret
         uses: ./
         with:
-          envkey_DEBUG: false
+          envkey_DEBUG: true
           envkey_SOME_API_KEY: '123456abcdef'
           envkey_SECRET_KEY: ${{ secrets.SECRET_KEY }}
           some_other_variable: foobar
